@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahly Babar | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ahly Monzour H. Babar - projects, resume, certifications, and contact." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Background glow blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Ahly Babar</span>
+          <span class="brand-sub">IT Student / Developer / Data Analyst</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <a class="nav-link active" href="#resume">Resume</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero-grid">
+
+        <!-- Left: Profile circle -->
+        <div class="hero-left reveal">
+          <div class="profile-ring">
+            <img
+              src="img/me.jpg"
+              alt="Profile photo"
+              class="profile-photo"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Right: Intro -->
+        <div class="hero-right reveal" style="--delay: 120ms;">
+          <h1 class="hero-title">Hello</h1>
+          <h2 class="hero-subtitle">A Bit About Me</h2>
+
+          <p class="hero-text">
+            I’m <strong>Ahly Monzour H. Babar</strong>, a BS Information Technology student
+            based in Nasugbu, Batangas. I build web apps, mobile apps and systems using HTML, CSS, JavaScript,
+            PHP, React Native and MySQL — and I’m currently learning Laravel.
+          </p>
+
+          <div class="cta-circles">
+            <a class="circle-btn circle-btn--resume" href="#resume" aria-label="Go to Resume section">Resume</a>
+            <a class="circle-btn circle-btn--projects" href="#projects" aria-label="Go to Projects section">Projects</a>
+            <a class="circle-btn circle-btn--contact" href="#contact" aria-label="Go to Contact section">Contact</a>
+          </div>
+
+          <div class="mini-badges">
+            <span class="badge">PHP • MySQL</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">Laravel (learning)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section resume" id="resume">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Resume</h2>
+        </div>
+
+        <div class="resume-grid">
+          <!-- Left column: skills + quick info -->
+          <aside class="resume-aside reveal">
+            <div class="aside-card">
+              <h3 class="aside-title">Skills</h3>
+
+              <div class="skill">
+                <div class="skill-top"><span>HTML / CSS</span><span>Intermediate</span></div>
+                <div class="bar"><span style="width: 70%"></span></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top"><span>JavaScript</span><span>Intermediate</span></div>
+                <div class="bar"><span style="width: 65%"></span></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top"><span>PHP / MySQL</span><span>Intermediate</span></div>
+                <div class="bar"><span style="width: 78%"></span></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top"><span>Python</span><span>Intermediate</span></div>
+                <div class="bar"><span style="width: 70%"></span></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top"><span>Laravel</span><span>Learning</span></div>
+                <div class="bar"><span style="width: 45%"></span></div>
+              </div>
+
+              <div class="skill">
+                <div class="skill-top"><span>React Native</span><span>Learning</span></div>
+                <div class="bar"><span style="width: 40%"></span></div>
+              </div>
+            </div>
+
+            <div class="aside-card">
+              <h3 class="aside-title">Quick Info</h3>
+              <ul class="clean-list">
+                <li><span class="muted">Location:</span> Nasugbu, Batangas</li>
+                <li><span class="muted">Email:</span> <a href="mailto:ahlybabar1188@gmail.com">ahlybabar1188@gmail.com</a></li>
+                <li><span class="muted">Phone:</span> <a href="tel:+639476179440">+63 947 617 9440</a></li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Right column -->
+          <div class="resume-content">
+            <article class="resume-block reveal" style="--delay: 80ms;">
+              <div class="block-left">
+                <h3 class="block-title">Education</h3>
+              </div>
+              <div class="block-right">
+                <div class="timeline-item">
+                  <div class="timeline-meta">2022 – Present</div>
+                  <div class="timeline-main">
+                    <h4>BS Information Technology</h4>
+                    <p class="muted">Batangas State University ARASOF – Nasugbu Campus</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-meta">2016 – 2022</div>
+                  <div class="timeline-main">
+                    <h4>Nicolites Montessori School</h4>
+                    <p class="muted">Secondary</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-meta">2010 – 2016</div>
+                  <div class="timeline-main">
+                    <h4>Creative Dream School</h4>
+                    <p class="muted">Primary</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="resume-block reveal" style="--delay: 120ms;">
+              <div class="block-left">
+                <h3 class="block-title">Certifications</h3>
+                <p class="block-hint">PDF viewer included</p>
+              </div>
+              <div class="block-right">
+                <ul class="cert-list">
+                  <li><strong>Microsoft Word (Office 2019)</strong> — IT Specialist (Issued: Dec 2022)</li>
+                  <li><strong>IT Specialist – Databases</strong> — BatStateU ARASOF (Issued: May 2024)</li>
+                  <li><strong>IT Specialist – Data Analytics</strong> — BatStateU ARASOF (Issued: May 2025)</li>
+                  <li><strong>IBM SkillsBuild / IBM</strong> — AI Fundamentals, Big Data Foundations (Nov 2024)</li>
+                  <li><strong>Cisco</strong> — Data Analytics Essentials, English for IT 1 & 2 (Nov–Dec 2024)</li>
+                </ul>
+
+                <div class="cert-actions">
+                  <button class="btn" id="openPdfBtn" href="img/BABAR RESUME.pdf" type="button">View Certifications PDF</button>
+                  <a class="btn btn-ghost" href="img/PROFESSIONAL CERTIFICATIONS.pdf" download>Download PDF</a>
+            
+                </div>
+              </div>
+            </article>
+
+            <article class="resume-block reveal" style="--delay: 160ms;">
+              <div class="block-left">
+                <h3 class="block-title">Research Involvement</h3>
+              </div>
+              <div class="block-right">
+                <div class="timeline-item">
+                  <div class="timeline-meta">2025</div>
+                  <div class="timeline-main">
+                    <h4>ExcelLens: A Digital System for Student Performance and Course Analytics</h4>
+                    <p class="muted">
+                      Capstone project for academic analytics that automates grading through configurable assessment criteria and generates Excel reports for student grade validation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="resume-block reveal" style="--delay: 200ms;">
+              <div class="block-left">
+                <h3 class="block-title">Capabilities</h3>
+              </div>
+              <div class="block-right">
+                <div class="pill-wrap">
+                  <span class="pill">Python</span>
+                  <span class="pill">C++</span>
+                  <span class="pill">HTML</span>
+                  <span class="pill">CSS</span>
+                  <span class="pill">PHP</span>
+                  <span class="pill">JavaScript</span>
+                  <span class="pill">React Native (learning)</span>
+                  <span class="pill">MySQL</span>
+                  <span class="pill">Laravel (learning)</span>
+                </div>
+                <p class="muted tiny">Tools: Word, Excel, Tableau, SQL Server Management Studio, VS Code, Power Query.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <!-- PHP Projects -->
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3 class="project-title">ExcelLens (2025)</h3>
+              <p class="project-desc">
+                Academic analytics platform that embeds curricula for course loading, automates grading, and generates Excel reports for grade validation.
+              </p>
+              <div class="tech"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-ghost" href="https://excellens.site" aria-disabled="true">Live Demo</a>
+       
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 80ms;">
+            <div class="project-top">
+              <h3 class="project-title">Hospital Information Management System (2024)</h3>
+              <p class="project-desc">
+                Centralized web system for appointment scheduling, patient records, staff assignments, and equipment/medicine inventory.
+              </p>
+              <div class="tech"><span>PHP</span><span>MySQL</span><span>CRUD</span></div>
+            </div>
+            <div class="project-actions">
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 120ms;">
+            <div class="project-top">
+              <h3 class="project-title">BPO Information Management System (2024)</h3>
+              <p class="project-desc">
+                Web system for tracking sales performance, employee records, violations, and team progress.
+              </p>
+              <div class="tech"><span>PHP</span><span>MySQL</span><span>Dashboard</span></div>
+            </div>
+            <div class="project-actions">
+        
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 160ms;">
+            <div class="project-top">
+              <h3 class="project-title">Online Banking System (Demo) (2025)</h3>
+              <p class="project-desc">
+                Demo web application simulating transfers and an admin dashboard for monitoring activity trends.
+              </p>
+              <div class="tech"><span>PHP</span><span>MySQL</span><span>Admin</span></div>
+            </div>
+            <div class="project-actions">
+          
+            </div>
+          </article>
+
+          <!-- Python Projects -->
+          <article class="project-card reveal" style="--delay: 200ms;">
+            <div class="project-top">
+              <h3 class="project-title">Shop Inventory Management System (2023)</h3>
+              <p class="project-desc">
+                Stand-alone app that supports inventory CRUD with automated stock adjustments for additions and sales.
+              </p>
+              <div class="tech"><span>Python</span><span>OOP</span><span>CRUD</span></div>
+            </div>
+            <div class="project-actions">
+  
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 240ms;">
+            <div class="project-top">
+              <h3 class="project-title">Barangay Information Management System (2024)</h3>
+              <p class="project-desc">
+                Stand-alone system for resident records with automatic barangay document generation from profiles.
+              </p>
+              <div class="tech"><span>Python</span><span>Data</span><span>Documents</span></div>
+            </div>
+            <div class="project-actions">
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 280ms;">
+            <div class="project-top">
+              <h3 class="project-title">Dormitory Information Management System (2024)</h3>
+              <p class="project-desc">
+                Stand-alone app for managing occupants, rent payments, and utilities (electricity and water bills).
+              </p>
+              <div class="tech"><span>Python</span><span>Records</span><span>Billing</span></div>
+            </div>
+            <div class="project-actions">
+      
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 320ms;">
+            <div class="project-top">
+              <h3 class="project-title">Student Enrollment Management System (2024)</h3>
+              <p class="project-desc">
+                Stand-alone enrollment validator that checks prerequisites and provides a grade overview per course.
+              </p>
+              <div class="tech"><span>Python</span><span>Validation</span><span>Records</span></div>
+            </div>
+            <div class="project-actions">
+        
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay: 360ms;">
+            <div class="project-top">
+              <h3 class="project-title">Coastal Clean-up Count Tracker (2024)</h3>
+              <p class="project-desc">
+                Logs collected waste during coastal cleanups and estimates total bag weight using predefined assumptions.
+              </p>
+              <div class="tech"><span>Python</span><span>Logging</span><span>Estimation</span></div>
+            </div>
+            <div class="project-actions">
+     
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Contact</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3 class="card-title">Let’s work together</h3>
+            <p class="muted">Send a message and I’ll get back as soon as I can.</p>
+
+            <ul class="contact-list">
+              <li><span class="muted">Email:</span> <a href="mailto:ahlybabar1188@gmail.com">ahlybabar1188@gmail.com</a></li>
+              <li><span class="muted">Phone:</span> <a href="tel:+639476179440">+63 947 617 9440</a></li>
+              <li><span class="muted">Location:</span> Nasugbu, Batangas</li>
+            </ul>
+
+            <div class="social">
+              <a class="social-link" href="https://www.linkedin.com/in/ahly-monzour-babar-473a53365/" aria-label="LinkedIn (add your link)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM0.5 23.5h4V7.98h-4V23.5ZM8.5 7.98h3.83v2.12h.05c.53-1 1.83-2.12 3.77-2.12 4.03 0 4.78 2.65 4.78 6.1v9.42h-4v-8.36c0-1.99-.04-4.55-2.77-4.55-2.77 0-3.2 2.16-3.2 4.41v8.5h-4V7.98Z"/></svg>
+                LinkedIn
+              </a>
+              <a class="social-link" href="https://github.com/ahlybabar" aria-label="GitHub (add your link)">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.34-1.78-1.34-1.78-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.92 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.62-5.47 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h4 class="footer-title">Phone</h4>
+        <a href="tel:+639476179440">+63 947 617 9440</a>
+      </div>
+      <div>
+        <h4 class="footer-title">Email</h4>
+        <a href="mailto:ahlybabar1188@gmail.com">ahlybabar1188@gmail.com</a>
+      </div>
+      <div>
+        <h4 class="footer-title">Follow Me</h4>
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/ahly-monzour-babar-473a53365/" aria-label="LinkedIn (add link)">in</a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        © <span id="year"></span> by Ahly Babar. Powered by HTML/CSS/JS.
+      </div>
+    </div>
+  </footer>
+
+  <!-- PDF Modal -->
+  <div class="modal" id="pdfModal" aria-hidden="true" role="dialog" aria-label="Certifications PDF Viewer">
+    <div class="modal-backdrop" data-close-modal="true"></div>
+
+    <div class="modal-panel" role="document">
+      <div class="modal-head">
+        <h3>Professional Certifications (PDF)</h3>
+        <button class="icon-btn" id="closePdfBtn" type="button" aria-label="Close PDF viewer">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <iframe
+          class="pdf-frame"
+          src="img/BABAR RESUME.pdf#view=FitH"
+          title="Certifications PDF"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <div class="modal-foot">
+        <a class="btn btn-ghost" href="img/BABAR RESUME.pdf" target="_blank" rel="noopener">Open in new tab</a>
+        <a class="btn" href="img/BABAR.pdf" download>Download</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
